@@ -9,7 +9,6 @@ agent_executor = create_python_agent(
     tool=PythonREPLTool(),
     verbose=True,
     agent_type=AgentType.OPENAI_FUNCTIONS,
-    agent_executor_kwargs={"handle_parsing_errors": True},
+    agent_executor_kwargs={"handle_parsing_errors": True},
 )
-agent_executor.run("What is the 10th fibonacci number?")
-
+agent_executor.run("What is the 10th fibonacci number?")
