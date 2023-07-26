@@ -5,7 +5,7 @@ from langchain.llms.openai import OpenAI
 from langchain.agents.agent_types import AgentType
 from langchain.chat_models import ChatOpenAI 
 agent_executor = create_python_agent(
-    llm=ChatOpenAI(temperature=0, model="gpt-3.5-turbo-0613" , openai_api_key="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"),
+    llm=ChatOpenAI(temperature=0, model="gpt-3.5-turbo-0613" , openai_api_key="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"),
     tool=PythonREPLTool(),
     verbose=True,
     agent_type=AgentType.OPENAI_FUNCTIONS,
